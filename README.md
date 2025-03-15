@@ -92,7 +92,7 @@ function MyComponent() {
 
 The library has the following exports:
 
-### Main entry point `@reactodia/worker-proxy`
+### `@reactodia/worker-proxy` entry point
 
 #### `refCountedWorker<T>(factory, constructorArgs)` function
 
@@ -130,7 +130,7 @@ export interface RefCountedWorker<T> {
 }
 ```
 
-### Protocol entry point `@reactodia/worker-proxy/protocol`
+### `@reactodia/worker-proxy/protocol` entry point
 
 #### `connectWorker(factory: WorkerConstructor)` function
 
