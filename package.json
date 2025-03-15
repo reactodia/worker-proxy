@@ -1,0 +1,59 @@
+{
+    "name": "@reactodia/worker-proxy",
+    "version": "0.1.0",
+    "description": "Transparently mapped Web Worker proxy objects for easy background tasks",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/reactodia/worker-proxy.git"
+    },
+    "keywords": [
+        "web-worker",
+        "proxy",
+        "typescript"
+    ],
+    "author": {
+        "name": "Alexey Morozov",
+        "url": "https://github.com/AlexeyMz"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/reactodia/worker-proxy/issues"
+    },
+    "homepage": "https://github.com/reactodia/worker-proxy#readme",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "test": "vitest",
+        "typecheck": "tsc",
+        "clean": "rimraf dist"
+    },
+    "devDependencies": {
+        "@vitest/browser": "^3.0.8",
+        "playwright": "^1.51.0",
+        "rimraf": "^6.0.1",
+        "typescript": "^5.8.2",
+        "vitest": "^3.0.8"
+    },
+    "type": "module",
+    "main": "dist/workers.js",
+    "typings": "dist/workers.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/workers.js",
+            "types": "./dist/workers.d.ts"
+        },
+        "./protocol": {
+            "import": "./dist/protocol.js",
+            "types": "./dist/protocol.d.ts"
+        }
+    },
+    "files": [
+        "dist",
+        "src",
+        "CHANGELOG.md",
+        "LICENSE.md",
+        "package.json",
+        "README.md",
+        "tsconfig.json",
+        "tsconfig.build.json"
+    ]
+}

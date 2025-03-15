@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/*.sh
+/*.bat
+/*.tgz
+.vscode/
+
+*.log
